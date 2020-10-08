@@ -5,7 +5,8 @@
     Last Edit: 10/06/2020
 
     Description:   Stooge sort implementation that generates arrays of size n 
-    containing random integer values, and records the time taken to sort.  
+    containing random integer values, and records the time taken to sort, 
+    outputs runs and average to CSV.  
 """
 import os 
 import time 
