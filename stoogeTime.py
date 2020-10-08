@@ -36,7 +36,7 @@ def stoogeSort(inArray, l, h):
         return
     return inArray
 
-# Fill and record arrays 
+# Fill and sort arrays 
 def printOut(inArray, mIt):
     avgTime = 0
     for k in range(1, 8):
@@ -57,7 +57,7 @@ for a in nIn:
     printOut(a, ki)
     ki += 1
     
-# Convert to string and utput to Terminal
+# Convert to string and output to Terminal
 inPut_out = ""
 for i in nOut: 
     inPut_out += ", ".join(map(str, i)) + "\n"
