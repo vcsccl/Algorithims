@@ -36,7 +36,7 @@ def stoogeSort(inArray, l, h):
         return
     return inArray
 
-# Output to Terminal
+# Definition call
 def printOut(inArray, mIt):
     avgTime = 0
     for k in range(1, 8):
@@ -51,7 +51,7 @@ def printOut(inArray, mIt):
     avgTime = avgTime / 7
     nOut[mIt].extend([avgTime])
 
-# Definition call
+# Output to Terminal
 ki = 0
 for a in nIn:
     printOut(a, ki)
