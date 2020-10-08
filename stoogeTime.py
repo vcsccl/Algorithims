@@ -21,15 +21,16 @@ nOut = [[n1],[n2],[n3],[n4]]
 
 # Sort arrays decrementally using stooge sort
 def stoogeSort(inArray, l, h):
-    if (h-l+1 == 2) and (inArray[l] > inArray[h]):
+    a = h - l + 1
+    if (a == 2) and (inArray[l] > inArray[h]):
         t = inArray[l]
         inArray[l] = inArray[h]
         inArray[h] = t
-    if h-l+1 > 2: 
-        t = (int)((h-l+1) / 3)
-        stoogeSort(inArray, l, (h-t))
+    if a > 2: 
+        m = (int)((a) / 3)
+        stoogeSort(inArray, l, (h - m))
         stoogeSort(inArray, l+t, (h))
-        stoogeSort(inArray, l, (h-t))
+        stoogeSort(inArray, l, (h - m))
 
 # Output to Terminal
 def printOut(inArray, mIt):
