@@ -13,10 +13,10 @@ import time
 import random
 
 # Generate arrays of n size and output nested list
-n1 = 500
-n2 = 1000
-n3 = 1500
-n4 = 2000
+n1 = 50000
+n2 = 100000
+n3 = 150000
+n4 = 200000
 nIn = [[0]*n1, [0]*n2, [0]*n3, [0]*n4]
 nOut = [[n1],[n2],[n3],[n4]]
 
@@ -63,7 +63,7 @@ for i in nOut:
     inPut_out += ", ".join(map(str, i)) + "\n"
 print(inPut_out)
 
-# Write to file
+# Write to File
 if os.path.exists("test.txt"):
     os.remove("test.txt")
 writeFile = open("test.txt", "x")
