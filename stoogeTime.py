@@ -1,4 +1,4 @@
-""" Stooge Time
+""" Stooge Time - Experimental O(n) Run
 
     Jon Palmer
     CS 325 Fall 2020
