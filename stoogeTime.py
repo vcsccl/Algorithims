@@ -2,7 +2,7 @@
 
     Jon Palmer
     CS 325 Fall 2020
-    Last Edit: 10/06/2020
+    Last Edit: 10/07/2020
 
     Description:   Stooge sort implementation that generates arrays of size n 
     containing random integer values, records the time taken to sort, and
