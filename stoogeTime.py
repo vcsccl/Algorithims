@@ -20,7 +20,7 @@ n4 = 2000
 nIn = [[0]*n1, [0]*n2, [0]*n3, [0]*n4]
 nOut = [[n1],[n2],[n3],[n4]]
 
-# Sort arrays decrementally using stooge sort
+# Sort arrays using stooge sort
 def stoogeSort(inArray, l, h):
     a = h - l + 1
     if (a == 2) and (inArray[l] > inArray[h]):
@@ -51,16 +51,19 @@ def printOut(inArray, mIt):
     avgTime = avgTime / 7
     nOut[mIt].extend([avgTime])
 
+# Definition call
 ki = 0
 for a in nIn:
     printOut(a, ki)
     ki += 1
-
+    
+# Convert to string
 inPut_out = ""
 for i in nOut: 
     inPut_out += ", ".join(map(str, i)) + "\n"
 print(inPut_out)
 
+# Write to file
 if os.path.exists("test.txt"):
     os.remove("test.txt")
 writeFile = open("test.txt", "x")
