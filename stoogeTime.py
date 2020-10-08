@@ -26,11 +26,14 @@ def stoogeSort(inArray, l, h):
         t = inArray[l]
         inArray[l] = inArray[h]
         inArray[h] = t
-    if a > 2: 
+    elif a > 2: 
         m = (int)((a) / 3)
         stoogeSort(inArray, l, (h - m))
         stoogeSort(inArray, l+t, (h))
         stoogeSort(inArray, l, (h - m))
+    else:
+        return
+    return inArray
 
 # Output to Terminal
 def printOut(inArray, mIt):
