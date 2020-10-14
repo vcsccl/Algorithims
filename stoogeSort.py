@@ -10,8 +10,7 @@
     integers. The output will be written to a file called “stooge.out”  
 """
 
-# Read file and store as string
-inPut_in = []
+#inPut_in = []
 with open("data.txt", "r") as inFile:
     for line in inFile:
         inPut_in.extend(map(int, line.split(' ')))
