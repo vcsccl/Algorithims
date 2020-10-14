@@ -5,7 +5,7 @@
     Last Edit: 10/06/2020
 
     Description:   Implement STOOGESORT to sort an array/vector of integers. 
-    The program reads input from a file called “data.txt” where the first 
+    The program reads input from a file called data.txt where the first 
     value of each line is the number of integers that need to be sorted, followed by the 
     integers. The output will be written to a file called “stooge.out”  
 """
